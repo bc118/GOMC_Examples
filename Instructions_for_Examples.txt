@@ -1,0 +1,26 @@
+Two examples are provided below for simulating these MoSDeF builds in the GOMC engine
+
+
+    1. GEMC_NVT:
+        ◦ To generate the required forcefield, psf, and pdb files for the simulation.
+            ▪ Go to the GEMC_NVT/Generate_liq_vap_boxes folder using your terminal. 
+            ▪ Run the GEMC_NVT_Example.py  or GEMC_NVT_Example.ipynb file with python3 or a Jupyter notebook, respectively.
+
+        ◦ To simulate the system using GOMC:
+            ▪ Go to the GEMC_NVT/500K  folder. 
+            ▪ Run the IOT_IDE_vapor_box.conf file using the following command:
+                • ‘Path to GOMC program’/GOMC_CPU_GEMC +p2 IOT_IDE_vapor_box.conf > IOT_IDE_vapor_box.log
+                • Note: the +p2 signifies the number of cores to run, so the user may select 1 to more, depending on their computer or needs. 
+
+
+    2. Graphene_water_NaCl_NVT:
+        ◦ To generate the required forcefield, psf, and pdb files for the simulation.
+            ▪ Go to the Graphene_water_NaCl_NVT/NVT_build folder using your terminal. 
+            ▪ Run the NVT_build_pore_3x3x2.0nm_3-layer.py  or NVT_build_pore_3x3x2.0nm_3-layer.ipynb file with python3 or a Jupyter notebook, respectively.
+
+        ◦ To simulate the system using GOMC: 
+            ▪ Go to the Graphene_water_NaCl_NVT/300K  folder. 
+            ▪ Run the slit_water_NaCl_NVT.conf file using the following command:
+                • ‘Path to GOMC program’/GOMC_CPU_GEMC +p2 slit_water_NaCl_NVT.conf > slit_water_NaCl_NVT.log
+                • Note: the +p2 signifies the number of cores to run, so the user may select 1 to more, depending on their computer or needs. 
+
